@@ -1,4 +1,5 @@
-CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS     NAMES
-5280a01fef7a   nginx     "/docker-entrypoint.…"   12 seconds ago   Up 11 seconds   80/tcp    reverent_clarke
-4e1c121a3d24   nginx     "/docker-entrypoint.…"   14 seconds ago   Up 13 seconds   80/tcp    reverent_shaw
-3cba61b607f4   nginx     "/docker-entrypoint.…"   28 seconds ago   Up 27 seconds   80/tcp    hungry_nash
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS                      PORTS     NAMES
+5280a01fef7a   nginx     "/docker-entrypoint.…"   2 minutes ago    Exited (0) 15 seconds ago             reverent_clarke
+4e1c121a3d24   nginx     "/docker-entrypoint.…"   2 minutes ago    Exited (0) 6 seconds ago              reverent_shaw
+3cba61b607f4   nginx     "/docker-entrypoint.…"   2 minutes ago    Up 2 minutes                80/tcp    hungry_nash
+
