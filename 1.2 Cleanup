@@ -1,4 +1,4 @@
-➜  ~ docker images ls
+➜  ~ docker image ls
 REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
 
 ➜  ~ docker container ls -a
