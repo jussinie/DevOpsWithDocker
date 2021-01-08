@@ -1,0 +1,15 @@
+➜  ~ docker container exec -it awesome_satoshi bash
+root@9d38cb2ee3bb:/usr/app# ps aux
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.1  0.3 620444 29764 ?        Ssl  05:41   0:00 node index
+root        18  0.8  0.0  18184  3108 pts/0    Ss   05:45   0:00 bash
+root        24  0.0  0.0  36632  2744 pts/0    R+   05:45   0:00 ps aux
+root@9d38cb2ee3bb:/usr/app# ls
+Dockerfile  README.md  index.js  logs.txt
+root@9d38cb2ee3bb:/usr/app# tail -f ./logs.txt
+Fri, 08 Jan 2021 05:45:31 GMT
+Fri, 08 Jan 2021 05:45:34 GMT
+Fri, 08 Jan 2021 05:45:37 GMT
+Fri, 08 Jan 2021 05:45:40 GMT
+Secret message is:
+"Docker is easy"
