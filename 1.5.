@@ -1,0 +1,8 @@
+docker container run -it ubuntu:16.04 
+root@8af782d01870:/# apt-get update && apt-get install -y curl 
+
+// Here I checked the changes and then committed the changes to a new image which I later used to complete the assignment.
+
+docker container commit 8af782d01870 ubuntu-pluschanges
+
+docker container run -it ubuntu-pluschanges sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
