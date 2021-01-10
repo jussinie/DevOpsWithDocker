@@ -1,0 +1,2 @@
+docker container run -p 5000:5000 frontend
+docker container run -v "$(pwd):/backend" -p 8000:8000 backend
