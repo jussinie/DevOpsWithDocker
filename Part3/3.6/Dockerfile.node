@@ -1,0 +1,25 @@
+FROM node:10 as build-stage
+
+ENV API_URL=http://localhost:8000
+
+WORKDIR /frontend
+
+COPY /frontend-example-docker .
+
+RUN useradd -m app && \
+    chown -R app /frontend && \
+    npm run build
+
+USER app
+
+FROM node:10
+
+COPY --from=build-stage /frontend/dist/ /frontend
+        
+WORKDIR /frontend
+
+RUN npm install -g serve
+
+EXPOSE 5000
+
+CMD npx serve
