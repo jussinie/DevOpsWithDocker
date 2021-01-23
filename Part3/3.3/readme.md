@@ -7,6 +7,6 @@ After that you need to give a folder name (that is the last part from the github
 In the end, provide your docker username and password. 
   
 **How to use**  
-Download files to your local folder. 
-Build by using: docker build . -t image_name_you_want
+Download files to your local folder.  
+Build by using: docker build . -t image_name_you_want  
 Run with: docker run -it -v /var/run/docker.sock:/var/run/docker.sock image_name_you_want
